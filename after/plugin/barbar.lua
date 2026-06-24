@@ -7,6 +7,7 @@ require("barbar").setup {
     minimum_padding = 1,
     maximum_length = 30,
     minimum_length = 0,
+    auto_hide = 1
 }
 
 local map = vim.api.nvim_set_keymap
