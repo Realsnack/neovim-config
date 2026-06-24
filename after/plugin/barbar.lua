@@ -1,4 +1,13 @@
-require("barbar").setup()
+require("barbar").setup {
+    animation = true,
+    tabpages = true,
+    clickable = true,
+    insert_at_end = true,
+    maximum_padding = 1,
+    minimum_padding = 1,
+    maximum_length = 30,
+    minimum_length = 0,
+}
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
