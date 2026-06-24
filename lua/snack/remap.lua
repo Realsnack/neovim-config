@@ -21,4 +21,5 @@ vim.keymap.set("n", "<leader>wq", ":wq<CR>")
 vim.keymap.set("n", "<leader>ww", ":w<CR>")
 
 vim.keymap.set("n", "<C-e>", ":Ex<CR>")
+vim.keymap.set("n", "<C-t>", ":terminal<CR>")
 
