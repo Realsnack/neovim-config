@@ -7,7 +7,21 @@ require("barbar").setup {
     minimum_padding = 1,
     maximum_length = 30,
     minimum_length = 0,
-    auto_hide = 1
+    auto_hide = 1,
+    highlight_alternate = true,
+    highlight_visible = true,
+
+    icons = {
+        buffer_index = false,
+        gitsigns = {
+            added = {enabled = true, icon = '+'},
+            changed = {enabled = true, icon = '~'},
+            deleted = {enabled = true, icon = '-'},
+        },
+    },
+    sidebar_filetypes = {
+        NvimTree = true
+    }
 }
 
 local map = vim.api.nvim_set_keymap
