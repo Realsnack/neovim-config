@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<C-e>", ":Ex<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -13,17 +14,16 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
--- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "<leader>qq", ":q<CR>")
 vim.keymap.set("n", "<leader>wq", ":wq<CR>")
 vim.keymap.set("n", "<leader>ww", ":w<CR>")
 
-vim.keymap.set("n", "<C-e>", ":Ex<CR>")
 vim.keymap.set("n", "<C-t>", ":terminal<CR>")
 
 -- turn off highlight until next search
-
 vim.keymap.set("n", "<S-h>", ":noh<CR>")
+
+vim.keymap.set("n", "<C-e>", ":NvimTreeOpen<CR>")
 

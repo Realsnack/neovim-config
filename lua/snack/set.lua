@@ -13,3 +13,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
